@@ -21,21 +21,22 @@
         }
 
         .video-container iframe {
-            width: 100%;
+            width: 80%;
             aspect-ratio: 16 / 9; /* Maintain aspect ratio */
             border: none;
         }
 
         .svg-container {
-            width: 100%; /* Scale width to browser width */
+            width: 80%; /* Scale width to browser width */
             overflow: hidden; /* Crop the top portion */
         }
 
         .svg-container object {
-            width: 100%; /* Full browser width */
+            width: 80%; /* Full browser width */
             height: auto; /* Maintain aspect ratio */
             display: block; /* Remove object spacing */
             transform: translateY(-15%); /* Crop top 15% */
+            clip-path: inset(0 0 5% 0); /* Crop bottom 10% */
         }
     </style>
 </head>
